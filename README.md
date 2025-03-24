@@ -1,7 +1,3 @@
-Here's a clean and professional README for your **Voice-Chat-Bot** repository:
-
----
-
 # 🎙️ Voice-Chat-Bot
 
 A Python-based voice chatbot that leverages **Whisper** for speech-to-text, **Ollama** for AI-generated responses, and **pyttsx3** for text-to-speech conversion. This project allows users to have a natural, real-time conversation with an AI model using voice commands.
@@ -42,9 +38,9 @@ pip install git+https://github.com/openai/whisper.git
 
 ### 5. Install and run Ollama:
 - Install Ollama from [https://ollama.com](https://ollama.com).
-- Download the LLaMA model:
+- Download the Mistral model:
 ```bash
-ollama pull llama3
+ollama pull mistral
 ```
 
 ---
@@ -52,7 +48,7 @@ ollama pull llama3
 ## ▶️ Usage
 1. Start the chatbot:
 ```bash
-python submission.py
+python chatbot_with_ollama.py
 ```
 2. Speak into your microphone.
 3. The chatbot will respond using voice output.
@@ -61,9 +57,12 @@ python submission.py
 
 ## 📂 Project Structure
 ```
-├── submission.py       # Main chatbot logic
-├── requirements.txt    # Required Python packages
-└── README.md           # Project documentation
+├── README.md                  # Project documentation  
+├── chatbot_with_chatgpt.py    # Chatbot using OpenAI GPT models  
+├── chatbot_with_ollama.py     # Chatbot using Ollama with LLaMA models  
+├── env/                       # Virtual environment (ignored in .gitignore)  
+├── requirements.txt           # Required Python packages  
+└── temp_audio.wav             # Temporary audio file for transcription  
 ```
 
 ---
@@ -87,7 +86,3 @@ Developed by [Jeet Undaviya](https://github.com/jeetundaviya)
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-This README provides a professional overview and makes it easy for others to install, run, and contribute to your project. Let me know if you'd like to tweak any section! 😎
